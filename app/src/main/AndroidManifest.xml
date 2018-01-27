@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name="com.example.prasant.prasantpandeydemo.GithubApplication">
-        <activity android:name="com.example.prasant.prasantpandeydemo.activity.SplashScreen" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <activity android:name="com.example.prasant.prasantpandeydemo.activity.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +23,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:screenOrientation="portrait"
             android:name="com.example.prasant.prasantpandeydemo.activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.example.prasant.prasantpandeydemo.activity.LoginActivity"></activity>
+        <activity android:screenOrientation="portrait" android:name="com.example.prasant.prasantpandeydemo.activity.LoginActivity"></activity>
     </application>
 
 </manifest>
